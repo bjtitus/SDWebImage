@@ -1,0 +1,13 @@
+/*
+ * This file is part of the TMSDWebImage package.
+ * (c) Olivier Poitrey <rs@dailymotion.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+#import <TMSDWebImage/TMSDInternalMacros.h>
+
+void tmsd_executeCleanupBlock (__strong tmsd_cleanupBlock_t *block) {
+    (*block)();
+}
